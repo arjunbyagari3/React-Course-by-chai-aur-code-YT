@@ -27,6 +27,18 @@ function App() {
   }
 
 
+// Interview question 
+
+function addFive(){
+  // adding value with 5 statements
+  setCounter(counter=>counter+1)
+  setCounter(counter=>counter+1)
+  setCounter(counter=>counter+1)
+  setCounter(counter=>counter+1)
+  setCounter(counter=>counter+1)
+
+
+}
 
   return (
     <>
@@ -37,6 +49,8 @@ function App() {
       {/* <button onClick={()=>{if(counter>-5){setCounter(counter-1)}}}> thagginchu {counter}</button> <hr /> */}
       <button onClick={()=>{setCounter(counter*2),console.log(counter)}}>Double it {counter}</button> <hr />
       <button onClick={()=>{setCounter(Math.sqrt(counter)),console.log(counter)}}>root value is {counter}</button> <hr />
+      <button onClick={addFive}>add +5 {counter} </button>
+
 
 
       <footer>footer {counter}</footer>
